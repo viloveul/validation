@@ -1,0 +1,27 @@
+{
+    "name": "viloveul/validation",
+    "description": "Base Validation for wrapping vlucas/valitron",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["zafex", "viloveul", "fajrulaz", "validation", "component", "library"],
+    "homepage": "http://www.viloveul.com",
+    "readme": "README.MD",
+    "authors": [{
+        "name": "Fajrul Akbar Zuhdi",
+        "email": "fajrulaz@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Viloveul\\Validation\\": "src/"
+        }
+    },
+    "require": {
+        "php": "~7.0",
+        "vlucas/valitron": "1.4.*"
+    }
+}
