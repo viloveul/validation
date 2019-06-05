@@ -3,8 +3,8 @@
 namespace Viloveul\Validation\Contracts;
 
 use ArrayAccess;
-use IteratorAggregate;
 use JsonSerializable;
+use IteratorAggregate;
 
 interface Message extends ArrayAccess, JsonSerializable, IteratorAggregate
 {

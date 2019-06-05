@@ -2,9 +2,9 @@
 
 namespace Viloveul\Validation;
 
+use Viloveul\Validation\Message;
 use Valitron\Validator as ValitronValidator;
 use Viloveul\Validation\Contracts\Validator as IValidator;
-use Viloveul\Validation\Message;
 
 abstract class Validator implements IValidator
 {
@@ -26,6 +26,7 @@ abstract class Validator implements IValidator
     {
         $this->params = $params;
         $this->validator = new ValitronValidator($data);
+        $this->validator->stopOnFirstFail(true);
         if (method_exists($this, 'boot')) {
             $this->boot();
         }
