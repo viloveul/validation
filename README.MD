@@ -14,7 +14,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 class UserValidation extends Viloveul\Validation\Validator
 {
-    public function rules() {
+    public function rules(): array {
         return [
             'insert' => [
                 'username' => [
